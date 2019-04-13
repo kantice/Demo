@@ -1,0 +1,45 @@
+
+{
+    "hosts" :
+    [
+        {
+            "key_class" : "KATRouterLoaderHost" ,
+
+            "hostName" : "a.test" ,
+            "className" : "KATTestAVC" ,
+            "groups" : ["test"]
+        } ,
+
+        {
+            "key_class" : "KATRouterLoaderHost" ,
+
+            "hostName" : "b.test" ,
+            "className" : "KATTestBVC" ,
+            "groups" : ["test"] ,
+        },
+
+        {
+            "key_class" : "KATRouterLoaderHost" ,
+
+            "hostName" : "action.test" ,
+            "className" : "KATTestActionVC" ,
+            "floor" : "browser" ,
+            "isAlwaysRetained" : true ,
+
+            "actions" :
+            {
+                "action.test/toast" : "showToastWithMessage:"
+            }
+        }
+    ] ,
+
+    "groups" :
+    [
+        {
+            "key_class" : "KATRouterLoaderGroup" ,
+
+            "groupName" : "test" ,
+        } ,
+    ]
+}
+

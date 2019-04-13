@@ -1,0 +1,4 @@
+{
+    CFBundleDisplayName = "示例";
+    NSPhotoLibraryAddUsageDescription = "添加照片";
+}

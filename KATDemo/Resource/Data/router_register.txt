@@ -1,0 +1,14 @@
+
+{
+    "hosts" :
+    [
+        {
+            "key_class" : "KATRouterLoaderHost" ,
+
+            "hostName" : "browser" ,
+            "className" : "KATBrowserVC" ,
+            "transitionStyle" : 18 
+        }
+    ] 
+}
+

@@ -1,0 +1,6 @@
+{
+
+"appName" : "DEMO",
+"appInfo" : "This is a demo."
+
+}

@@ -1,0 +1,155 @@
+
+{
+    "key_class" : "KATRouterLoader" ,   #类名 ,
+
+    "firstRouteURI" : "a.test" ,    #首次路由URI ,
+    "transitionStyleKey" : "transition_style" , #转场动画风格的key(方便传参数) ,
+    "transitionStyle" : 18 , #转场动画风格 ,
+    "transitionDurationKey" : "transition_duration" ,   #转场动画时长的key(方便传参数) ,
+    "transitionDuration" : 0.3 ,    #转场动画时长 ,
+    "routingWithNewInstanceKey" : "new_instance" ,  #路由时是否新建实例的key(方便传参数) ,
+    "routingWithMultipleInstanceKey" : "multiple_instance" ,    #路由时是否创建多例的key(方便传参数) ,
+    "timerInterval" : 1.0 , #任务定时器间隔 ,
+    "routingWaitDuration" : "6.0" , #路由最大等待时间 ,
+    "floorHosts" : ["host1","host2"] , #地板host数组 ,
+    "alwaysRetainedHosts" : ["host1","host2"] , #实例一直持有的host数组 ,
+    "alwaysRetainedGroups" : ["group1","group2"] ,  #实例一直持有的组 ,
+    "routingWithNewInstanceHosts" : ["host1","host2"] , #路由时新建实例的host数组 ,
+    "routingWithNewInstanceGroups" : ["group1","group2"] ,  #路由时新建实例的组 ,
+    "routingWithMultipleInstanceHosts" : ["host1","host2"] ,    #路由时创建多例的host数组 ,
+    "routingWithMultipleInstanceGroups" : ["group1","group2"] , #路由时创建多例的组 ,
+    "requeredSnapshotHosts" : ["host1","host2"] ,   #路由时需要接收截图的host数组 ,
+    "requeredSnapshotGroups" : ["group1","group2"] ,    #路由时需要接收截图的组 ,
+    "forbiddenHosts" : ["host1","host2"] ,  #禁止跳转的host数组 ,
+    "forbiddenGroups" : ["group1","group2"] ,   #禁止跳转的组 ,
+    "redirectedURI" : "http://www.kantice.com" ,    #重定向的URI(跳转被禁止的host时重定向的URI，若为nil有则不跳转) ,
+    "shouldCloseDependencyTransition" : false , #是否关闭依赖关系路由的动画 ,
+    "isNotAutoHidingTabBar" : false ,   #是否不自动隐藏标签栏(非关联标签栏的host)(默认为否) ,
+    "isAutoStatusBarStyle" : false, #是否自动更新状态栏样式 ,
+
+    #host重定向 ,
+    "hostRedirections" :
+    {
+        "host1" : "URI1" ,
+        "host2" : "URI2"
+    } ,
+
+    #scheme的处理表 ,
+    "schemeProcessors" :
+    {
+        "http" : "browser" ,
+        "https" : "browser"
+    } ,
+
+    "isSingleOrientationOnly" : false , #是否单一屏幕方向(只有单一方向的竖屏或横屏) ,
+    "isLandscapeOrientationDefault" : false ,   #是否默认屏幕方向是否为横屏 ,
+    "portraitOrientationHosts" : ["host1","host2"] ,    #竖屏方向的host数组 ,
+    "portraitOrientationGroups" : ["group1","group2"] , #竖屏方向的组 ,
+    "landscapeOrientationHosts" : ["host1","host2"] ,   #横屏方向的host数组 ,
+    "landscapeOrientationGroups" : ["group1","group2"] ,    #横屏方向的组 ,
+    "freeOrientationHosts" : ["host1","host2"] ,    #自由屏方向的host数组 ,
+    "freeOrientationGroups" : ["group1","group2"] , #自由屏方向的组 ,
+
+    "shouldKeepLogs" : true ,   #是否保存日志 ,
+    "shouldUploadLogs" : false ,    #是否上传日志 ,
+    "logsDirectory" : "logs_dir" ,  #日志存放目录(Documents下) ,
+    "logsKeepingDays" : 60 ,    #日志保存天数 ,
+    "logsUploadURL" : "http://www.kantice.com/katlogs/cardspeak_log/upload/upload.php" ,    #日志上传地址 ,
+    "logsSignatureURL" : "http://www.kantice.com/katlogs/cardspeak_log/upload/signature.php" ,  #日志签名地址 ,
+    "logsApp" : "demo" ,    #日志的app名称 ,
+    "logsUploadContentKey" : "content" ,    #日志的上传内容属性名称 ,
+
+    #日志上传时的附加信息 ,
+    "logsUploadExtra" :
+    {
+        "msg" : "this is a test"
+    } ,
+
+    "shouldGetCommands" : true , #是否获取远程命令 ,
+    "commandsGetURL" : "http://www.kantice.com/katlogs/cardspeak_log/command/get_commands.php" ,    #远程命令获取地址 ,
+
+    #获取远程命令时的附加信息 ,
+    "commandGetExtra" :
+    {
+        "msg" : "this is a test"
+    } ,
+
+    "slideEnabledHosts" : ["host1","host2"] ,   #可以侧滑回退的host数组 ,
+    "slideEnabledGroups" : ["group1","group2"] ,    #可以侧滑回退的组 ,
+    "slideDisabledHosts" : ["host1","host2"] ,  #不能侧滑回退的host数组 ,
+    "slideDisabledGroups" : ["group1","group2"] ,   #不能侧滑回退的组 ,
+    "slideFinishProgress" : 0.4 ,   #侧滑完成进度点(0~1之间 默认0.4，即超过宽度的40%) ,
+    "slideFinishSpeed" : 16.0 , #侧滑手势完成条件的滑动尾速(默认为每帧16点) ,
+    "slideStartXPoint" : 0.5 ,  #侧滑手势起始点X坐标位置(0~1之间,默认0.5,即左半屏) ,
+    "slideNotAutoSetting" : false , #水平滑动动画效果的host是否不自动带侧滑交互(默认否) ,
+
+    #全局数据字典 ,
+    "globalValues" :
+    {
+        "content_max" : 128
+    } ,
+
+    #全局加密数据 ,
+    "globalData" :
+    {
+        "secret" : "carefully using this place!"
+    } ,
+
+    #host数组 ,
+    "hosts" :
+    [
+        {
+            "key_class" : "KATRouterLoaderHost" ,   #类名 ,
+
+            "hostName" : "host1" ,  #host名称 ,
+            "className" : "Test1VC" ,   #类名 ,
+            "dependence" : "host3" ,    #依赖host ,
+            "isFloor" : 0 ,    #是否为地板
+            "floor" : "host3" ,    #地板host ,
+            "groups" : ["group1"] , #所属分组数组 ,
+            "orientation" : 0 , #屏幕方向(1竖屏、2横屏、3自由)(默认0根据全局设置) ,
+            "slideEnable" : 0 , #是否能侧滑回退(1可以、2不可以)(默认0根据全局设置) ,
+            "observedMessageType" : "message_type" ,    #监听指定类型的消息 ,
+            "transitionStyle" : 0 , #转场动画类型(默认0根据全局设置) ,
+            "isAlwaysRetained" : false ,    #是否一直持有 ,
+            "isRoutingWithNewInstance" : false ,    #是否路由时新建实例 ,
+            "isRoutingWithMultipleInstance" : true ,    #是否路由时创建多例 ,
+            "isRequeredSnapshot" : false ,  #是否需要路由截图 ,
+
+            #动作表 ,
+            "actions" :
+            {
+                "action1" : "method1" ,
+                "action2" : "method2:"
+            } ,
+
+            #数据表 ,
+            "values" :
+            {
+                "k1" : "v1" ,
+                "k2" : "v2"
+            }
+        }
+    ] ,
+
+    #组数组 ,
+    "groups" :
+    [
+        {
+            "key_class" : "KATRouterLoaderGroup" ,  #类名 ,
+
+            "groupName" : "group1" ,    #组名称 ,
+            "hosts" : ["host1","host3"] ,   #host数组 ,
+            "dependence" : "host3" ,    #依赖host ,
+            "floor" : "host3" ,    #地板host ,
+            "orientation" : 0 , #屏幕方向(1竖屏、2横屏、3自由)(默认0根据全局设置) ,
+            "slideEnable" : 0 , #是否能侧滑回退(1可以、2不可以)(默认0根据全局设置) ,
+            "transitionStyle" : 0 , #转场动画类型(默认0根据全局设置) ,
+            "isAlwaysRetained" : false ,    #是否一直持有 ,
+            "isRoutingWithNewInstance" : false ,    #是否路由时新建实例 ,
+            "isRoutingWithMultipleInstance" : false ,   #是否路由时创建多例 ,
+            "isRequeredSnapshot" : false ,  #是否需要路由截图 ,
+        }
+    ]
+}
+

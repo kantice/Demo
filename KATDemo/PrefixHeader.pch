@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  KATDemo
+//
+//  Created by Yi Yu on 2018/3/22.
+//  Copyright © 2018年 Kantice. All rights reserved.
+//  必需的头文件及宏在此
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "AppData.h"
+
+#import <KATCoreLibrary/KATRouter.h>
+#import <KATCoreLibrary/KATMacros.h>
+
+#import "Macros.h"
+
+
+#endif /* PrefixHeader_pch */

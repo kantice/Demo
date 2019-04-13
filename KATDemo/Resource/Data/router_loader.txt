@@ -1,0 +1,32 @@
+
+{
+    "key_class" : "KATRouterLoader" ,
+    
+    "firstRouteURI" : "a.test" ,
+    "transitionStyle" : 21 ,
+    "transitionDuration" : 0.6 ,
+    "forbiddenHosts" : ["host1","host2"] ,
+    "forbiddenGroups" : ["group1","group2"] ,
+    "redirectedURI" : "http://www.kantice.com" ,
+    "isAutoStatusBarStyle" : true,
+
+    "schemeProcessors" :
+    {
+        "http" : "browser" ,
+        "https" : "browser"
+    } ,
+
+    "isLandscapeOrientationDefault" : false ,
+    "landscapeOrientationHosts" : ["host1","host2"] ,
+
+    "shouldKeepLogs" : false ,
+    "shouldUploadLogs" : false ,
+    "logsKeepingDays" : 60 ,
+    "logsUploadURL" : "http://www.kantice.com/api/xxxxxx/log/log.php" ,
+    "logsSignatureURL" : "http://www.kantice.com/api/xxxxxx/log/signature.php" ,
+    "logsApp" : "demo" ,
+
+    "shouldGetCommands" : true ,
+    "commandsGetURL" : "http://www.kantice.com/api/xxxxxx/cmd/cmd.php" 
+}
+

@@ -1,0 +1,6 @@
+{
+
+"moduleName" : "Test",
+"moduleInfo" : "This is a test."
+
+}

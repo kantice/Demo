@@ -1,0 +1,7 @@
+{
+
+"moduleName" : "测试",
+"moduleInfo" : "这是一个测试。"
+
+}
+

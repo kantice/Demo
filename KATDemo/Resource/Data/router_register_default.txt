@@ -1,0 +1,59 @@
+
+{
+    "hosts" :
+    [
+        {
+            "key_class" : "KATRouterLoaderHost" ,   #类名 ,
+
+            "hostName" : "host1" ,  #host名称 ,
+            "className" : "Test1VC" ,   #类名 ,
+            "dependence" : "host3" ,    #依赖host ,
+            "isFloor" : 0 ,    #是否为地板
+            "floor" : "host3" ,    #地板host ,
+            "groups" : ["group1"] , #所属分组数组 ,
+            "orientation" : 0 , #屏幕方向(1竖屏、2横屏、3自由)(默认0根据全局设置) ,
+            "slideEnable" : 0 , #是否能侧滑回退(1可以、2不可以)(默认0根据全局设置) ,
+            "observedMessageType" : "message_type" ,    #监听指定类型的消息 ,
+            "transitionStyle" : 0 , #转场动画类型(默认0根据全局设置) ,
+            "isAlwaysRetained" : false ,    #是否一直持有 ,
+            "isRoutingWithNewInstance" : false ,    #是否路由时新建实例 ,
+            "isRoutingWithMultipleInstance" : true ,    #是否路由时创建多例 ,
+            "isRequeredSnapshot" : false ,  #是否需要路由截图 ,
+
+            #动作表 ,
+            "actions" :
+            {
+                "action1" : "method1" ,
+                "action2" : "method2:"
+            } ,
+
+            #数据字典 ,
+            "values" :
+            {
+                "k1" : "v1" ,
+                "k2" : "v2"
+            }
+        }
+    ] ,
+
+    #组数组 ,
+    "groups" :
+    [
+        {
+            "key_class" : "KATRouterLoaderGroup" ,  #类名 ,
+
+            "groupName" : "group1" ,    #组名称 ,
+            "hosts" : ["host1","host3"] ,   #host数组 ,
+            "dependence" : "host3" ,    #依赖host ,
+            "floor" : "host3" ,    #地板host ,
+            "orientation" : 0 , #屏幕方向(1竖屏、2横屏、3自由)(默认0根据全局设置) ,
+            "slideEnable" : 0 , #是否能侧滑回退(1可以、2不可以)(默认0根据全局设置) ,
+            "transitionStyle" : 0 , #转场动画类型(默认0根据全局设置) ,
+            "isAlwaysRetained" : false ,    #是否一直持有 ,
+            "isRoutingWithNewInstance" : false ,    #是否路由时新建实例 ,
+            "isRoutingWithMultipleInstance" : false ,   #是否路由时创建多例 ,
+            "isRequeredSnapshot" : false ,  #是否需要路由截图 ,
+        }
+    ]
+}
+
