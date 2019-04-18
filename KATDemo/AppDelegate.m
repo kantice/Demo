@@ -165,8 +165,6 @@ CFAbsoluteTime appStartTime;
 }
 
 
-
-
 //初始化界面
 - (void)initView
 {
