@@ -24,7 +24,7 @@
     {
         KATHashMap *result=[KATHashMap hashMapWithString:returnText];
         
-        if([self resultDataKey])//有返回数据的key
+        if(result[[self resultDataKey]])//有返回数据的key
         {
             return result[[self resultDataKey]];
         }
@@ -46,7 +46,7 @@
     {
         KATHashMap *result=[KATHashMap hashMapWithString:returnText];
         
-        if([self resultDataKey])//有返回数据的key
+        if(result[[self resultDataKey]])//有返回数据的key
         {
             result=result[[self resultDataKey]];
         }
@@ -69,7 +69,7 @@
     {
         KATHashMap *result=[KATHashMap hashMapWithString:returnText];
         
-        if([self resultDataKey])//有返回数据的key
+        if(result[[self resultDataKey]])//有返回数据的key
         {
             return result[[self resultDataKey]];
         }
@@ -91,7 +91,7 @@
     {
         KATHashMap *result=[KATHashMap hashMapWithString:returnText];
         
-        if([self resultDataKey])//有返回数据的key
+        if(result[[self resultDataKey]])//有返回数据的key
         {
             result=result[[self resultDataKey]];
         }
@@ -114,7 +114,7 @@
     {
         KATHashMap *result=[KATHashMap hashMapWithString:returnText];
         
-        if([self resultDataKey])//有返回数据的key
+        if(result[[self resultDataKey]])//有返回数据的key
         {
             return result[[self resultDataKey]];
         }
@@ -136,7 +136,7 @@
     {
         KATHashMap *result=[KATHashMap hashMapWithString:returnText];
         
-        if([self resultDataKey])//有返回数据的key
+        if(result[[self resultDataKey]])//有返回数据的key
         {
             result=result[[self resultDataKey]];
         }
@@ -161,7 +161,7 @@
         
         KATHashMap *result=[KATHashMap hashMapWithString:returnText];
         
-        if([self resultDataKey])//有返回数据的key
+        if(result[[self resultDataKey]])//有返回数据的key
         {
             return result[[self resultDataKey]];
         }
@@ -189,7 +189,7 @@
         
         KATHashMap *result=[KATHashMap hashMapWithString:returnText];
         
-        if([self resultDataKey])//有返回数据的key
+        if(result[[self resultDataKey]])//有返回数据的key
         {
             result=result[[self resultDataKey]];
         }
