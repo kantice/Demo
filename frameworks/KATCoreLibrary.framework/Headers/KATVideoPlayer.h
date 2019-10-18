@@ -18,40 +18,34 @@
 #define VIDEO_PLAYER_STATE_FORWARD 5
 #define VIDEO_PLAYER_STATE_BACKWARD 6
 
-
 #define VIDEO_PLAYER_LOAD_UNKNOWN 0
 #define VIDEO_PLAYER_LOAD_PLAYABLE 1
 #define VIDEO_PLAYER_LOAD_PLAY_THROUGH_OK 2
 #define VIDEO_PLAYER_LOAD_STALLED 3
 
-
 #define VIDEO_PLAYER_SOURCE_UNKNOWN 0
 #define VIDEO_PLAYER_SOURCE_FILE 1
 #define VIDEO_PLAYER_SOURCE_STREAMING 2
 
-
 #define VIDEO_PLAYER_TYPE_NONE 0
 #define VIDEO_PLAYER_TYPE_VIDEO 1
 #define VIDEO_PLAYER_TYPE_AUDIO 2
-
 
 #define VIDEO_PLAYER_SCALE_NONE 0
 #define VIDEO_PLAYER_SCALE_ASPECT_FIT 1
 #define VIDEO_PLAYER_SCALE_ASPECT_FILL 2
 #define VIDEO_PLAYER_SCALE_FILL 3
 
-
 #define VIDEO_PLAYER_REPEAT_OFF 0
 #define VIDEO_PLAYER_REPEAT_ON 1
-
 
 #define VIDEO_PLAYER_STYLE_NONE 0
 #define VIDEO_PLAYER_STYLE_EMBEDDED 1
 #define VIDEO_PLAYER_STYLE_FULLSCREEN 2
 #define VIDEO_PLAYER_STYLE_DEFAULT 3
 
-
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
 
 @class KATVideoPlayer;
@@ -62,7 +56,7 @@
 @optional
 
 ///状态改变
-- (void)videoPlayerStateChange:(KATVideoPlayer *)player;
+- (void)videoPlayerStateChanged:(KATVideoPlayer *)player;
 
 ///播放完毕
 - (void)videoPlayerPlayFinished:(KATVideoPlayer *)player;
@@ -71,8 +65,6 @@
 - (void)videoPlayerThumbnailRequestFinished:(KATVideoPlayer *)player withThumb:(UIImage *)thumb;
 
 @end
-
-
 
 
 
@@ -195,11 +187,11 @@
 ///多张缩略图(回调函数中获取)
 - (void)thumbnailImageAtTimes:(NSArray *)times;
 
-
 ///释放内存
 - (void)dealloc;
 
-
 @end
 
+
+#pragma clang diagnostic pop
 

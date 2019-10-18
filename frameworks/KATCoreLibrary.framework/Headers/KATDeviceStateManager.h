@@ -10,7 +10,6 @@
 #import <UIKit/UIKit.h>
 
 
-
 #define DEVICE_BATTERY_UNKNOWN 0
 #define DEVICE_BATTERY_UNPLUGGED 1
 #define DEVICE_BATTERY_CHARGING 2
@@ -50,10 +49,8 @@
 
 @interface KATDeviceStateManager : NSObject
 
-
-
-
-@property(nonatomic,assign) id<KATDeviceStateManagerDelegate> eventDelegate;//事件代理
+///事件代理
+@property(nonatomic,assign) id<KATDeviceStateManagerDelegate> eventDelegate;
 
 
 #pragma mark - 类方法
@@ -82,10 +79,7 @@
 ///停止方向感应监听
 - (void)stopOrientationMonitoring;
 
-
 ///释放内存
 - (void)dealloc;
-
-
 
 @end

@@ -75,7 +75,6 @@
 
 #pragma -mark 类方法
 
-
 ///获取实例
 + (instancetype)buttonWithFrame:(CGRect)frame text:(NSString *)text font:(UIFont *)font color:(UIColor *)color andAction:(void (^)(void))action;
 

@@ -20,9 +20,7 @@ typedef NS_ENUM(NSUInteger, KATBoxAlignment)
 };
 
 
-
 @interface KATBox : KATSprite
-
 
 #pragma -mark 属性
 

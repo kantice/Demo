@@ -167,6 +167,9 @@ typedef NS_ENUM(NSUInteger, KATShapeType)
 ///获取等边三角形
 + (KATShape *)equilateralTriangleShapeWithLength:(double)length;
 
+///获取外切圆等边三角形
++ (KATShape *)triangleShapeWithRadius:(double)radius;
+
 ///获取三角形
 + (KATShape *)triangleShapeWithPointA:(CGPoint)pa andPointB:(CGPoint)pb andPointC:(CGPoint)pc;
 

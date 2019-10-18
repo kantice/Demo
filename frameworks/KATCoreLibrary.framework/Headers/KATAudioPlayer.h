@@ -34,7 +34,6 @@
 
 @interface KATAudioPlayer : NSObject <AVAudioPlayerDelegate>
 
-
 #pragma -mark 属性
 
 ///事件代理

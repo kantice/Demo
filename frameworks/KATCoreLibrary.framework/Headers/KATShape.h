@@ -31,8 +31,6 @@
 #define SHAPE_MODE_STROKE_COLOR 18
 
 
-
-
 #pragma -mark 常量
 
 ///动画键:类型(值为NSString *)
@@ -269,6 +267,8 @@ extern NSString * const kShapeAnimationJump;
 
 #pragma -mark 属性
 
+///标记
+@property(nonatomic,assign) long long int tag;
 
 ///等待执行动画队列
 @property(nonatomic,retain) KATQueue<__kindof CAAnimation *> *animationQueue;
@@ -406,7 +406,7 @@ extern NSString * const kShapeAnimationJump;
 - (CAKeyframeAnimation *)animationWithMode:(int)mode keyValues:(NSArray *)values keyTimes:(NSArray *)times duration:(double)duration repeat:(float)repeat autoreverses:(BOOL)autoreverses delay:(float)delay;
 
 ///获取动画组
-- (CAAnimationGroup *)animationWithGroup:(NSArray *)group duration:(double)duration repeat:(float)repeat autoreverses:(BOOL)autoreverses delay:(float)delay;
+- (CAAnimationGroup *)animationWithGroup:(NSArray<CAAnimation *> *)group duration:(double)duration repeat:(float)repeat autoreverses:(BOOL)autoreverses delay:(float)delay;
 
 
 #pragma -mark 动画执行
@@ -448,7 +448,7 @@ extern NSString * const kShapeAnimationJump;
 - (void)transformVerticalMirror;
 
 ///缩放(相对初始值)(宽高,比例,1为原始值)
-- (void)transformScaleToWitdh:(float)width andHeight:(float)height;
+- (void)transformScaleToWidth:(float)width andHeight:(float)height;
 
 ///复位
 - (void)restoreShape;
@@ -543,13 +543,8 @@ extern NSString * const kShapeAnimationJump;
 ///跳跃
 - (void)jumpToPosition:(CGPoint)position withHeight:(float)height andDuration:(double)duration;
 
-
 ///释放内存
 - (void)dealloc;
-
-
-
-
 
 
 @end

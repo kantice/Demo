@@ -10,9 +10,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 
 
-
 @interface KATSoundPlayer : NSObject
-
 
 #pragma -mark 属性
 

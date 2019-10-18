@@ -27,7 +27,7 @@
 
 
 //默认超时
-#define HTTP_REQUEST_TIMEOUT 20.0
+#define HTTP_REQUEST_TIMEOUT 120.0
 
 
 //缓存策略

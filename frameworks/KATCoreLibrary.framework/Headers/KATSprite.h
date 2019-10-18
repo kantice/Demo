@@ -25,7 +25,7 @@
  
     CGFloat     m21（x切变）,    m22（y缩放）,     m23（）,        m24（）;
  
-    CGFloat     m31（旋转）,     m32（ ）,        m33（）,         m34（透视效果，要操作的这个对象要有旋转的角度，否则没有效果。正直/负值都有意义）;
+    CGFloat     m31（旋转）,     m32（）,         m33（）,        m34（透视效果，要操作的这个对象要有旋转的角度，否则没有效果。正直/负值都有意义）;
  
     CGFloat     m41（x平移）,    m42（y平移）,     m43（z平移）,    m44（）;
  };
@@ -309,7 +309,6 @@ typedef NS_ENUM(NSUInteger, KATSpriteResizeType)
 
 #pragma -mark 属性
 
-
 ///等待执行动画队列
 @property(nonatomic,retain) KATQueue<__kindof CAAnimation *> *animationQueue;
 
@@ -492,7 +491,7 @@ typedef NS_ENUM(NSUInteger, KATSpriteResizeType)
 - (CAKeyframeAnimation *)animationWithMode:(int)mode keyValues:(NSArray *)values keyTimes:(NSArray *)times duration:(double)duration repeat:(float)repeat autoreverses:(BOOL)autoreverses delay:(float)delay;
 
 ///获取动画组
-- (CAAnimationGroup *)animationWithGroup:(NSArray *)group duration:(double)duration repeat:(float)repeat autoreverses:(BOOL)autoreverses delay:(float)delay;
+- (CAAnimationGroup *)animationWithGroup:(NSArray<CAAnimation *> *)group duration:(double)duration repeat:(float)repeat autoreverses:(BOOL)autoreverses delay:(float)delay;
 
 
 #pragma -mark 动画执行
@@ -540,7 +539,7 @@ typedef NS_ENUM(NSUInteger, KATSpriteResizeType)
 - (void)transformVerticalMirror;
 
 ///缩放(相对初始值)(宽高,比例,1为原始值)
-- (void)transformScaleToWitdh:(float)width andHeight:(float)height;
+- (void)transformScaleToWidth:(float)width andHeight:(float)height;
 
 ///复位
 - (void)restoreSprite;

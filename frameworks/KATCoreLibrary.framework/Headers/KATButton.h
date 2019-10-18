@@ -222,8 +222,6 @@ typedef NS_ENUM(NSUInteger, KATButtonType)
 };
 
 
-
-
 @class KATButton;
 
 

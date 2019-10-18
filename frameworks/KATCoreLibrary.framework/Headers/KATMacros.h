@@ -18,7 +18,6 @@
 #define KATMacros_h
 
 
-
 //block self
 #define BLOCK_SELF __block typeof(self) blockSelf=self;
 
@@ -390,7 +389,6 @@ fprintf(stderr,"-------------------------------------------------------------\n"
 #define GCD_SYNC_GLOBAL(block) dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^block)
 #define GCD_AFTER(seconds,queue,block) dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(seconds * NSEC_PER_SEC)), queue, ^block)
 #define GCD_MAIN_AFTER(seconds,block) dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(seconds * NSEC_PER_SEC)), dispatch_get_main_queue(), ^block)
-
 
 
 
