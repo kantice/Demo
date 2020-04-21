@@ -7,6 +7,7 @@
 
             "hostName" : "a.test" ,
             "className" : "KATTestAVC" ,
+            "transitionStyle" : 1 ,
             "groups" : ["test"]
         } ,
 

@@ -3,7 +3,7 @@
     "key_class" : "KATRouterLoader" ,
     
     "firstRouteURI" : "a.test" ,
-    "transitionStyle" : 21 ,
+    "transitionStyle" : 11 ,
     "transitionDuration" : 0.6 ,
     "forbiddenHosts" : ["host1","host2"] ,
     "forbiddenGroups" : ["group1","group2"] ,

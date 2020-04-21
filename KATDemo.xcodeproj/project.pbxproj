@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		325A7CA5244F319D008DADE8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325A7CA4244F319D008DADE8 /* Launch Screen.storyboard */; };
 		32B2589B222A90B70028D272 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32B2589A222A90B70028D272 /* Settings.bundle */; };
 		4613076C2133EA05006AF49B /* KATTestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4613076B2133EA05006AF49B /* KATTestData.m */; };
 		464BE66121B8C5C500D778DB /* KATCoreLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464BE66021B8C5C500D778DB /* KATCoreLibrary.framework */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		325A7CA4244F319D008DADE8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		32B2589A222A90B70028D272 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		4613076A2133EA05006AF49B /* KATTestData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KATTestData.h; sourceTree = "<group>"; };
 		4613076B2133EA05006AF49B /* KATTestData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KATTestData.m; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 				733B198A20634F8900A899FB /* Macros.h */,
 				733B198620634D6D00A899FB /* PrefixHeader.pch */,
 				733B1876206347B600A899FB /* main.m */,
+				325A7CA4244F319D008DADE8 /* Launch Screen.storyboard */,
 				733B1875206347B600A899FB /* Info.plist */,
 				733B19992064985E00A899FB /* InfoPlist.strings */,
 				733B1870206347B600A899FB /* Assets.xcassets */,
@@ -559,6 +562,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325A7CA5244F319D008DADE8 /* Launch Screen.storyboard in Resources */,
 				46C128F421B7CDB800BD4BBA /* TestResource in Resources */,
 				733B19B02064CDB400A899FB /* Resource in Resources */,
 				32B2589B222A90B70028D272 /* Settings.bundle in Resources */,
@@ -817,7 +821,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S7469Y7KP;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -826,7 +830,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KATDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = KATDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kat.project.KATDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -839,7 +843,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S7469Y7KP;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -848,7 +852,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KATDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = KATDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kat.project.KATDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
