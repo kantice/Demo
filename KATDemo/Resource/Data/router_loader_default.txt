@@ -4,7 +4,7 @@
 
     "firstRouteURI" : "a.test" ,    #首次路由URI ,
     "transitionStyleKey" : "transition_style" , #转场动画风格的key(方便传参数) ,
-    "transitionStyle" : 18 , #转场动画风格 ,
+    "transitionStyle" : 18 , #转场动画风格:1.None,2.Fade,3.MoveHorizontal,4.MoveVertical,11.FlipHorizontal,12.FlipVertical,14.Ripple,18.NavHorizontal,19.NavVertical,20.CurtainHorizontal,21.CurtainVertical ,
     "transitionDurationKey" : "transition_duration" ,   #转场动画时长的key(方便传参数) ,
     "transitionDuration" : 0.3 ,    #转场动画时长 ,
     "routingWithNewInstanceKey" : "new_instance" ,  #路由时是否新建实例的key(方便传参数) ,

@@ -41,7 +41,7 @@
     <resources>
         <image name="BGIcon" width="1024" height="1024"/>
         <namedColor name="BGColor">
-            <color red="0.87657099962234497" green="0.84854793548583984" blue="0.89126187562942505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.87699997425079346" green="0.84899997711181641" blue="0.89099997282028198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
