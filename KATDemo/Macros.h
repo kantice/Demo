@@ -12,6 +12,7 @@
 
 #define DATA [AppData sharedData]
 #define STR [AppData sharedData].strings
+#define SYL [AppData sharedData].styles
 
 
 #endif /* Macros_h */

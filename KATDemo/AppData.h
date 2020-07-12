@@ -8,36 +8,27 @@
 
 #import <Foundation/Foundation.h>
 #import "Strings.h"
-
+#import "Styles.h"
 
 
 @interface AppData : NSObject
-
-
-#pragma -mark 路径
-
-
 
 #pragma -mark 数据
 
 ///字符串
 @property(nonatomic,strong,readonly) Strings *strings;
 
+///样式
+@property(nonatomic,strong,readonly) Styles *styles;
 
-#pragma -mark 颜色
-
-
-
-#pragma -mark 字体
-
+///用户数据
+@property(nonatomic,strong,readonly) NSObject *userData;
 
 
-#pragma -mark 样式
+#pragma -mark 路径
 
-
-
-#pragma -mark 视图
-
+///数据文件路径
+@property(nonatomic,copy) NSString *dataPath;
 
 
 #pragma -mark 类方法
@@ -49,8 +40,8 @@
 
 #pragma -mark 对象方法
 
-///保存配置
-- (void)saveConfig;
+///保存数据
+- (void)saveData;
 
 
 

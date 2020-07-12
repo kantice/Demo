@@ -68,7 +68,7 @@ NSString *kBrowserNavButtonAttribute=@"button_attr";
     WEAK_SELF;
     
     //背景色
-    self.view.backgroundColor=KCOLOR_BACKGROUND;
+    self.view.backgroundColor=SYL.colorBG;
     
     //配置
     self.config=[KATBrowserConfig config];

@@ -15,9 +15,17 @@
 @interface AppData ()
 
 
-//字符串
+///字符串
 @property(nonatomic,strong) Strings *strings;
 
+///样式
+@property(nonatomic,strong) Styles *styles;
+
+///用户数据
+@property(nonatomic,strong) NSObject *userData;
+
+///数据保存队列
+@property(nonatomic,strong) dispatch_queue_t queueDataSaving;
 
 @end
 
@@ -41,7 +49,8 @@ static AppData *_data=nil;
         //初始化
         _data=[[self alloc] init];
         
-        //加载文本
+#pragma -mark 加载文本
+        
         if(LANGUAGE_CH)//简体中文
         {
             //先从doc目录中加载(便于远程更新文本)
@@ -103,6 +112,9 @@ static AppData *_data=nil;
             }
         }
         
+
+#pragma -mark 路由器配置
+        
         //注册Host和group
         if([KATFileUtil existsFile:[NSString stringWithFormat:@"%@/router_register.txt",DOCUMENTS_PATH]])//先从doc目录中加载(便于远程更新配置)
         {
@@ -141,9 +153,26 @@ static AppData *_data=nil;
         }];
     });
     
+    
+#pragma -mark 加载样式
+            
+    _data.styles=[Styles sharedStyles];
+            
+            
+#pragma -mark 加载数据
+    
+    //用户文件路径
+    _data.dataPath=[NSString stringWithFormat:@"%@/data3.txt",DOCUMENTS_PATH];
+    
+    //数据保存队列
+    _data.queueDataSaving=dispatch_queue_create([@"queue_data_saving" UTF8String], DISPATCH_QUEUE_SERIAL);
+    
+    
     return _data;
 }
 
+
+#pragma -mark 对象方法
 
 //重写alloc
 + (instancetype)alloc
@@ -159,14 +188,15 @@ static AppData *_data=nil;
     
 }
 
-
-
-#pragma -mark 对象方法
-
-//保存配置
-- (void)saveConfig
+//保存数据
+- (void)saveData
 {
+    AppData *data=[AppData sharedData];
     
+    dispatch_async(data.queueDataSaving, ^
+    {
+        [KATAppUtil saveObject:data.userData withPassword:[KATRouter passwordForData] andPath:data.dataPath];
+    });
 }
 
 

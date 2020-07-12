@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		325A7CA5244F319D008DADE8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325A7CA4244F319D008DADE8 /* Launch Screen.storyboard */; };
+		32A39A1524BB53AF007B4DC7 /* Styles.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A39A1424BB53AF007B4DC7 /* Styles.m */; };
 		32B2589B222A90B70028D272 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32B2589A222A90B70028D272 /* Settings.bundle */; };
 		4613076C2133EA05006AF49B /* KATTestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4613076B2133EA05006AF49B /* KATTestData.m */; };
 		464BE66121B8C5C500D778DB /* KATCoreLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464BE66021B8C5C500D778DB /* KATCoreLibrary.framework */; };
@@ -49,6 +50,8 @@
 
 /* Begin PBXFileReference section */
 		325A7CA4244F319D008DADE8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		32A39A1324BB53AF007B4DC7 /* Styles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Styles.h; sourceTree = "<group>"; };
+		32A39A1424BB53AF007B4DC7 /* Styles.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Styles.m; sourceTree = "<group>"; };
 		32B2589A222A90B70028D272 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		4613076A2133EA05006AF49B /* KATTestData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KATTestData.h; sourceTree = "<group>"; };
 		4613076B2133EA05006AF49B /* KATTestData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KATTestData.m; sourceTree = "<group>"; };
@@ -356,6 +359,8 @@
 				733B198120634C0D00A899FB /* AppData.m */,
 				733B198320634C7D00A899FB /* Strings.h */,
 				733B198420634C7D00A899FB /* Strings.m */,
+				32A39A1324BB53AF007B4DC7 /* Styles.h */,
+				32A39A1424BB53AF007B4DC7 /* Styles.m */,
 				733B198A20634F8900A899FB /* Macros.h */,
 				733B198620634D6D00A899FB /* PrefixHeader.pch */,
 				733B1876206347B600A899FB /* main.m */,
@@ -594,6 +599,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A39A1524BB53AF007B4DC7 /* Styles.m in Sources */,
 				46992D0C2186AD7100DCC734 /* KATBrowserVC.m in Sources */,
 				46C128FD21B7D1ED00BD4BBA /* KATTestBVC.m in Sources */,
 				733B1877206347B600A899FB /* main.m in Sources */,
